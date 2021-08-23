@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cafe24.ssuace.repository.TestRepository">
+    <select id="getMember" resultType="java.lang.String">
+        SELECT name FROM ace_member WHERE idnum = '1508';
+    </select>
+    <update id="updateMember">
+        UPDATE ace_member SET name = '한의진' WHERE idnum = '1508';
+    </update>
+</mapper>
